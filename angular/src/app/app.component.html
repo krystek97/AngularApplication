@@ -1,23 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!--Wyswietlamy Stringa-->
-<h1>
-  Rzeczy
+<h1 [className] = "colorClass">
+  Bindowanie jednostronne
 </h1>
+<img [src] = 'logoUrl' [className] = "ImgClass">
+<input [maxLength] = "MaxLength" [value]="inputText">
+<button (click) = "ClickChange()">
+  Add
+</button>
 
-<ul>
-  <!--Wyswietli wszystkie elementy tablicy-->
-  <li *ngFor="let thing of things">
-    {{thing}}
-  </li>
-</ul>
 
-<h1>
-  Ksiazki
-</h1>
 
-<ul>
-  <li *ngFor = "let book of books">
-    Moja ksiazka to {{book.name}} , zostala wydana w  {{book.year}}
-  </li>
-</ul>
 
